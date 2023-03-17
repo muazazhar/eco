@@ -7,10 +7,6 @@ const nextConfig = {
     domains: ["cdn.sanity.io", "images.pexels.com", "www.pngarts.com"],
     // loader: "custom",
   },
-};
-
-module.exports = {
-  nextConfig,
   typescript: {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if
@@ -19,3 +15,5 @@ module.exports = {
     ignoreBuildErrors: true,
   },
 };
+
+module.exports = nextConfig;
