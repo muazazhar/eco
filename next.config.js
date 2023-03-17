@@ -3,6 +3,10 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-}
+  images: {
+    domains: ["cdn.sanity.io", "images.pexels.com", "www.pngarts.com"],
+    // loader: "custom",
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
