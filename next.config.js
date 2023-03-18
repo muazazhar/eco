@@ -14,6 +14,14 @@ const nextConfig = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "https://eco-rho.vercel.app/:path*",
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
